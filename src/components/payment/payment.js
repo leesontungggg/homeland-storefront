@@ -7,6 +7,8 @@ import PaymentForm from "./payment-form"
 const STRIPE_KEY = process.env.NEXT_PUBLIC_STRIPE_API_KEY || ""
 const stripePromise = loadStripe(STRIPE_KEY)
 
+console.log('STRIPE_KEY', STRIPE_KEY)
+
 const Payment = ({ handleSubmit, setLoading }) => {
   const { cart } = useCart()
 
