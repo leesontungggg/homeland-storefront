@@ -7,7 +7,7 @@ import NavBar from "../header/navbar"
 const Layout = ({ children, country, regions, handleRegionChange }) => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="w-full min-h-screen">
         {children}
       </div>

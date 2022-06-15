@@ -6,7 +6,6 @@ import { client } from "../utils/client"
 
 const ProductPage = ({ product, regions }) => {
   const [region, setRegion] = useState(regions?.find(reg => reg.name === 'VN') || null)
-  console.log(regions)
   const [country, setCountry] = useState(region?.countries?.[0].iso_2 || "")
 
   const handleRegionChange = (regId, countryCode) => {

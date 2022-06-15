@@ -16,7 +16,7 @@ const Delivery = ({ formik, region, country, setLoading }) => {
 
   return (
     <Box as="form">
-      <Text
+      {/* <Text
         as="h3"
         sx={{
           mb: "8px",
@@ -24,9 +24,9 @@ const Delivery = ({ formik, region, country, setLoading }) => {
         variant="subheading"
       >
         Delivery address
-      </Text>
+      </Text> */}
       <>
-        <Field
+        {/* <Field
           formik={formik}
           placeholder={"Address"}
           value={formik.values.delivery.address_1}
@@ -53,10 +53,10 @@ const Delivery = ({ formik, region, country, setLoading }) => {
             />
           }
         />
-        <Field formik={formik} value={fullCountry} disabled={true} />
-        <Text mt={4} as="h3" sx={{}} variant="subheading">
+        <Field formik={formik} value={fullCountry} disabled={true} /> */}
+        {/* <Text mt={4} as="h3" sx={{}} variant="subheading">
           Shipping method
-        </Text>
+        </Text> */}
         <SelectShipping
           formik={formik}
           placeholder={"Select shipping method"}

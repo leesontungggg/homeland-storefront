@@ -45,7 +45,7 @@ const Shipping = ({
           onClick={() => setActiveStep("shipping")}
           sx={triggerStyles}
         >
-          Shipping and info
+          Thông tin đặt hàng
           {hasShipping && (
             <Image src={"/check.png"} height={"11px"} width={"16px"} />
           )}

@@ -35,13 +35,13 @@ const ProductSelection = ({
 
   return (
     <Box>
-      <Text variant="header3">Product</Text>
+      <Text variant="header3">Sự kiện</Text>
       <Flex sx={{ mt: "16px", justifyContent: "center" }}>
         <ProductDisplay region={region} product={product} />
       </Flex>
       <Divider sx={{ color: "#E5E7EB", my: "16px" }} />
       <Button sx={{}} onClick={() => handleSubmit()} variant="cta">
-        Continue
+        Tiếp tục
       </Button>
     </Box>
   )

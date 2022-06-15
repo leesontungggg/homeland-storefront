@@ -79,24 +79,24 @@ const Payment = ({ region, country, activeStep }) => {
                 <Spinner />
               </Flex>
             )}
-            <Text variant="header3">Payment</Text>
+            <Text variant="header3">Thanh Toán</Text>
             <Box mt={"16px"}>
               <Review cart={cart} /> <Total cart={cart} />
-              <DeliveryReview
+              {/* <DeliveryReview
                 displayCountry={fullCountry}
                 delivery={cart.shipping_address}
-              />
+              /> */}
               <Flex
                 sx={{
                   flexDirection: "column",
                   py: "16px",
                 }}
               >
-                <Text variant="subheading" sx={{ mb: "8px" }}>
+                {/* <Text variant="subheading" sx={{ mb: "8px" }}>
                   Payment method
-                </Text>
+                </Text> */}
                 <Button onClick={submitPayment}>
-                  Submit
+                  Xác nhận đặt chỗ
                 </Button>
                 <PaymentDetails
                   handleSubmit={submitPayment}
@@ -107,7 +107,7 @@ const Payment = ({ region, country, activeStep }) => {
           </Flex>
         </Card>
       ) : (
-        <Card variant="accordionTrigger">Payment</Card>
+        <Card variant="accordionTrigger">Thanh Toán</Card>
       )}
     </Flex>
   )

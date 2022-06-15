@@ -25,7 +25,7 @@ const OrderConfirmation = ({ order }) => {
         }}
       >
         <Flex sx={{ lineHeight: "36px" }}>
-          Cám ơn, {customerName}! <br />
+          Cảm ơn, {customerName}! <br />
           Đã tham gia cùng tụi mình.
         </Flex>
         <Text variant="summary" sx={{ mt: "8px" }}>
@@ -61,6 +61,7 @@ const OrderConfirmation = ({ order }) => {
               <span style={{ color: "#111827", fontWeight: 500 }}>
                 {order.email}
               </span>
+              {" "}
               Các bạn vui lòng thanh toán trong vòng 1 ngày sau khi đặt chỗ nhé.
             </Text>
           </Flex>

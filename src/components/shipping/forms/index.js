@@ -45,10 +45,10 @@ const Forms = ({ country, region, nextStep, setLoading }) => {
         phone: Yup.string().optional(),
       }),
       delivery: Yup.object({
-        address_1: Yup.string().required("Required"),
-        postal_code: Yup.string().required("Required"),
-        city: Yup.string().required("Required"),
-        country_code: Yup.string().required("Required"),
+        // address_1: Yup.string().required("Required"),
+        // postal_code: Yup.string().required("Required"),
+        // city: Yup.string().required("Required"),
+        // country_code: Yup.string().required("Required"),
         shipping_option: Yup.string().required("Required"),
       }),
     }),
@@ -64,11 +64,11 @@ const Forms = ({ country, region, nextStep, setLoading }) => {
           shipping_address: {
             first_name: contact.first_name,
             last_name: contact.last_name,
-            address_1: delivery.address_1,
-            country_code: delivery.country_code,
-            postal_code: delivery.postal_code,
-            province: delivery.province,
-            city: delivery.city,
+            // address_1: delivery.address_1,
+            // country_code: delivery.country_code,
+            // postal_code: delivery.postal_code,
+            // province: delivery.province,
+            // city: delivery.city,
             phone: contact.phone,
           },
         })
@@ -86,7 +86,7 @@ const Forms = ({ country, region, nextStep, setLoading }) => {
 
   return (
     <Box>
-      <Text variant="header3">Shipping and info</Text>
+      <Text variant="header3">Thông tin đặt vé</Text>
       <Box mb={4} sx={{ mb: 4, mt: "16px" }}>
         <Contact formik={formik} summarize={false} setIsValid={setIsValid} />
       </Box>
@@ -107,7 +107,7 @@ const Forms = ({ country, region, nextStep, setLoading }) => {
         <>
           <Divider sx={{ color: "#E5E7EB", my: "16px" }} />
           <Button onClick={handleSubmit} variant="cta">
-            Go to payment
+            Thanh toán
           </Button>
         </>
       </Box>

@@ -84,7 +84,7 @@ const SelectShipping = ({ formik, name, set, region }) => {
 
   return (
     <Flex sx={{ flexDirection: "column" }}>
-      {shipping_options?.map(s => (
+      {/* {shipping_options?.map(s => (
         <ShippingOption
           key={s.id}
           onClick={() => handleClick(s.id)}
@@ -92,7 +92,7 @@ const SelectShipping = ({ formik, name, set, region }) => {
           option={s}
           region={region}
         />
-      ))}
+      ))} */}
     </Flex>
   )
 }
