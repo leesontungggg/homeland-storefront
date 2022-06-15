@@ -26,7 +26,7 @@ const OrderConfirmation = ({ order }) => {
       >
         <Flex sx={{ lineHeight: "36px" }}>
           Cám ơn, {customerName}! <br />
-          Đã tham gia cùng chúng mình.
+          Đã tham gia cùng tụi mình.
         </Flex>
         <Text variant="summary" sx={{ mt: "8px" }}>
           Bạn đã đặt vé thành công. Bạn hãy kiểm tra email để thực hiện thanh toán nhé.
