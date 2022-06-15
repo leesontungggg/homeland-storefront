@@ -22,15 +22,7 @@ const IndexPage = ({ products }) => {
           <div className="flex flex-col lg:flex-row items-center justify-center max-w-screen-2xl mx-auto h-full">
 
             <div>
-              <h1 className="text-4xl">CLAIM YOUR MERCH</h1>
-              <p className="mt-2 text-lg font-normal">
-                Contribute to Medusa and receive free merch
-                <br />
-                as a token of our appreciation
-              </p>
-              <button className="btn-ui mt-4 min-w-full lg:min-w-0">
-                Learn more
-              </button>
+              <h1 className="text-4xl">Chúng mình đang phát triển hệ thống, mời bạn quay lại sau nhé!</h1>
             </div>
           </div>
         </div>
