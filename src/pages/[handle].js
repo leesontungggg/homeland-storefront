@@ -41,6 +41,8 @@ const ProductPage = ({ product, regions }) => {
 export async function getStaticPaths() {
   const { products } = await client.products.list()
 
+  console.log('products', products)
+
   const paths = products
     .map(product => ({
       params: { handle: product.handle },
